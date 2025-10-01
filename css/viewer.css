@@ -1,5 +1,4 @@
 body {
-    overflow-x: hidden;
     width: 100%;
     height: 100%;
     
@@ -13,21 +12,30 @@ header {
     left: 0;
     margin: 0px;
     padding: 10px 0px;
-    background-color: red;
+    background-color: rgb(230, 0, 0);
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: white;
+    font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #grass {
-    background-image: url(/ptcgp-viewer/images/—Pngtree—imaginative\ cartoon\ style\ wallpaper\ background_15787908.png);
+    background-image: url(/images/grass-bg.png);
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
     height: fit-content;
     width: 100%;
     top: 0;
-    left: 0;
+    left: -10px;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -39,6 +47,16 @@ header {
 
 .card {
     margin: 150px 0px;
+}
+
+.card {
+  /* Optional: Add a transition for a smooth zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  /* Scale the element by 1.2 (120% of its original size) */
+  transform: scale(1.5); 
 }
 
 ul {
